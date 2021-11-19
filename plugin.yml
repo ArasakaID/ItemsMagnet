@@ -1,0 +1,5 @@
+name: ItemsMagnet
+version: 1.0.0
+main: ArasakaID\ItemsMagnet\ItemsMagnet
+api: 3.0.0
+author: ArasakaID
