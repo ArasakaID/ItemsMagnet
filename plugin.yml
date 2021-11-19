@@ -3,3 +3,7 @@ version: 1.0.0
 main: ArasakaID\ItemsMagnet\ItemsMagnet
 api: 3.0.0
 author: ArasakaID
+
+permissions:
+  itemsmagnet.use:
+    default: true

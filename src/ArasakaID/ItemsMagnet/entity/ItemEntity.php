@@ -35,7 +35,7 @@ class ItemEntity extends \pocketmine\entity\object\ItemEntity {
             if($currentTarget === null){
                 $newTarget = $this->level->getNearestEntity($this, self::MAX_TARGET_DISTANCE, Human::class);
 
-                if($newTarget instanceof Human and !($newTarget instanceof Player and $newTarget->isSpectator())){
+                if($newTarget instanceof Player and !$newTarget->isSpectator() and $newTarget->hasPermission("itemsmagnet.use")){
                     $currentTarget = $newTarget;
                 }
             }
